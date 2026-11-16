@@ -5,10 +5,10 @@ public class Product {
     private ProductCategory category;
 
     public Product(String name, String barcode, double price, ProductCategory category) {
-        this.name = name;
-        this.barcode = barcode;
-        this.price = price;
-        this.category = category;
+        setName(name);
+        setBarcode(barcode);
+        setPrice(price);
+        setCategory(category);
     }
 
     public String getName() {
@@ -46,10 +46,10 @@ public class Product {
     @Override
     public String toString() {
         return "Product{" +
-                "name='" + name + '\'' +
-                ", barcode='" + barcode + '\'' +
-                ", price=" + price +
-                ", category=" + category +
+                "name='" + getName() + '\'' +
+                ", barcode='" + getBarcode() + '\'' +
+                ", price=" + getPrice() +
+                ", category=" + getCategory() +
                 '}';
     }
 }
